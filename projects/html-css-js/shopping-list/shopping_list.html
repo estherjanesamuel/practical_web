@@ -8,47 +8,45 @@
     <style>
         li {margin-bottom: 12px;}
         li button {
-            font-size: 12px;
+            margin-left: 10px;
             color: #666;
-            margin-left: 12px;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <h1>My Shopping List</h1>
-
+    <h1>My shopping list</h1>
     <label for="item">Enter a new item: </label>
-    <input type="text" name="item" id="item">
-    <button>Add Item</button>
+    <input type="text" name="item" id="name">
+    <button>Add new item</button>
 
     <ul></ul>
-
     <script>
         const input = document.querySelector('input');
+        const ul = document.querySelector('ul');
         const btn = document.querySelector('button');
-        const list = document.querySelector('ul');
 
         btn.addEventListener('click', () => {
             const item = input.value;
             input.value = '';
 
             const li = document.createElement('li');
-            const txt = document.createElement('span');
+            const span = document.createElement('span');
             const btn = document.createElement('button');
 
-            li.appendChild(txt);
-            txt.textContent = item;
-            btn.textContent = 'Delete'
+            li.appendChild(span);
+            span.textContent = item;
             li.appendChild(btn);
-            list.appendChild(li);
+            btn.textContent = 'delete';
+
+            ul.appendChild(li);
 
             btn.addEventListener('click', () => {
-                list.removeChild(li);
+                ul.removeChild(li);
             });
-
-            input.focus();
         });
 
+        input.focus();
     </script>
 </body>
 </html>
