@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+body {
+  background-color: #d9d9d9;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Bungee";
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.container .header {
+  font-size: 55px;
+}
+
+#create-items {
+  display: flex;
+  min-width: 150px;
+}
+#create-items .input {
+  width: 100%;
+}
+#create-items .buttons button {
+  padding: 12px 18px;
+}
+
+.list-items {
+  margin-top: 20px;
+}
+.list-items .item-block {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+}
+/* .list-items .item-block button {
+  background: none;
+} */
+/* .list-items .item-block button:hover, .list-items .item-block button:active, .list-items .item-block button:focus {
+  background: none;
+} */
+.list-items .item-block button[data-attr=done] i {
+  font-size: 20px;
+}
+/* .list-items .item-block button[data-attr=delete] {
+  opacity: 0;
+} */
+
+/* .list-items .item-block button[data-attr=edit] {
+    opacity: 0;
+} */
+/* 
+.list-items .item-block:hover button[data-attr=delete] {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+} */
+.list-items .text-block {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding: 8px 5px;
+}
+.list-items .buttons {
+  flex: 1;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.item-block .ui .button {
+  padding: 12px 10px;
+  max-width: 110px;
+}
+
+
+.done {
+  text-decoration: line-through;
+  color: grey;
+  transition: all 1s;
+}
+
+.delete {
+  margin-left: -40%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+
+.edit {
+    
+  }

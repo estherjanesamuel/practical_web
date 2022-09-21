@@ -5,48 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List</title>
-    <style>
-        li {margin-bottom: 12px;}
-        li button {
-            margin-left: 10px;
-            color: #666;
-            font-size: 12px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css'><link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>My shopping list</h1>
-    <label for="item">Enter a new item: </label>
-    <input type="text" name="item" id="name">
-    <button>Add new item</button>
+    <div class="container">
 
-    <ul></ul>
-    <script>
-        const input = document.querySelector('input');
-        const ul = document.querySelector('ul');
-        const btn = document.querySelector('button');
-
-        btn.addEventListener('click', () => {
-            const item = input.value;
-            input.value = '';
-
-            const li = document.createElement('li');
-            const span = document.createElement('span');
-            const btn = document.createElement('button');
-
-            li.appendChild(span);
-            span.textContent = item;
-            li.appendChild(btn);
-            btn.textContent = 'delete';
-
-            ul.appendChild(li);
-
-            btn.addEventListener('click', () => {
-                ul.removeChild(li);
-            });
-        });
-
-        input.focus();
-    </script>
+        <h1>My shopping list</h1>
+        <label for="item">Enter a new item: </label>
+        <input type="text" name="item" id="name">
+        <button>Add new item</button>
+        
+        <template id="todo-container">
+            <div class="item-block">
+            <button class="ui icon button" data-attr="done"><i class="circle outline icon"></i></button>
+            <div class="text-block"></div>
+            <button class="ui icon button" data-attr="edit"><i class="edit red icon"></i></button>
+            <button class="ui icon button" data-attr="delete"><i class="trash red icon"></i></button>
+            </div>
+        </template>
+       
+        <section class="list-items"></section>
+                
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>

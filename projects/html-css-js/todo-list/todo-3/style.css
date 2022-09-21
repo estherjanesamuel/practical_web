@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529;
+  color: #CED4DA;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #7DF196;
+}
+
+.input-todo-card {
+  width: 59.5vw;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.confirm-edit-btn, .edit-todo-btn, .delete-todo-btn, #add-todo-btn, .ui.icon.button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+
+
+#add-todo-btn {
+  border-radius: 50%;
+}
+
+#add-todo-btn:hover {
+  background-color: rgba(125, 241, 150, 0.5);
+}
+
+#input-todo {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #CED4DA;
+}
+
+#input-todo::placeholder {
+  font-size: 1.5rem;
+  color: #CED4DA;
+}
+
+#todos-container {
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 3.375rem 0 2rem 0;
+}
+
+#todos-list {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+}
+
+.todo {
+  width: 44.2vw;
+  background-color: #495057;
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-text-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.check-todo-btn {
+  appearance: none;
+}
+
+.check-todo-btn {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1.5px solid #CED4DA;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.check-todo-btn:checked {
+  -webkit-appearance: none;
+  background-color: #7DF196;
+  border: 1.5px solid #7DF196;
+  padding: 9px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.todo-text {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-family: 1.25rem;
+  font: inherit;
+  font-weight: 400;
+  color: #CED4DA;
+}
+
+.todo-text::selection {
+  background: #CED4DA;
+  color: #EB4764;
+}
+
+.todo-text:disabled {
+  text-decoration: line-through;
+  color: #7DF196;
+  opacity: 0.7;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+.delete-todo-btn:hover {
+  opacity: 0.7;
+}
+
+.edit-todo-btn:hover {
+  opacity: 0.7;
+}
+
+.confirm-edit-btn:hover {
+  opacity: 0.7;
+}
+
+i {
+  color: #CED4DA;
+}
+
+.list-items .item-block {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* .list-items .item-block button[data-attr=delete] {
+  opacity: 0;
+} */
+
+/* .list-items .item-block button[data-attr=edit] {
+    opacity: 0;
+} */
+/* 
+.list-items .item-block:hover button[data-attr=delete] {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+} */
+
+.list-todo-card {
+  width: 59.5vw;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.list-items .text-block {
+  width: 59.5vw;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding: 8px 5px;
+}
+
+.ui.icon.button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+
+  padding: 0.5rem;
+}
+.list-items .buttons {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+
+
+.item-block .ui .button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  padding: 12px 10px;
+  max-width: 110px;
+  
+}
+
+
+.done {
+  text-decoration: line-through;
+  color: grey;
+  transition: all 1s;
+}
+
+.delete {
+  margin-left: -40%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+

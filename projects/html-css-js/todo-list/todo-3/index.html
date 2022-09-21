@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Task List</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Task List App</title>
+  <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.0.6/css/all.css'>
+  <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <header>
+    <h1>Task List by ariefs</h1>
+  </header>
+  <main>
+    <section class="input-todo-card">
+      <button id="add-todo-btn">
+        <i class="fal fa-plus-circle fa-lg"></i>
+      </button>
+      <input id="input-todo" type="text" placeholder="What's your next task?">
+    </section>
+    <h2>Your tasks</h2>
+    
+    <template id="todo-container">
+      <div class="item-block">
+      <button class="ui icon button" data-attr="done"><i class="fal fa-circle fa-thin"></i></button>
+      <div class="text-block"></div>
+      <button class="ui icon button" data-attr="edit"><i class="fal fa-edit fa-lg"></i></button>
+      <button class="ui icon button" data-attr="delete"><i class="fal fa-trash fa-lg""></i></button>
+      </div>
+    </template>
+ 
+    <section class="list-items"></section>
+         
+    <br>
+    <p align=center>A Javascript <i class="fab fa-js-square"></i> project for Javascript Basics II campaign on StackUp |
+      UpUpStackUp | 30DaysofWeb2</p>
+  </main>
+  <!-- partial -->
+  <script src="./index.js"></script>
+</body>
+
+</html>

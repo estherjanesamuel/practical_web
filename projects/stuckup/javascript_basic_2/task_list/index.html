@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Task List</title>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Task List App</title>
+  <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.0.6/css/all.css'>
+  <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+    <h1>Task List by Ariefs</h1>
+  </header>
+  <main>
+    <section class="input-todo-card">
+      <button id="add-todo-btn">
+        <i class="fal fa-plus-circle fa-lg"></i>
+      </button>
+      <input
+        id="input-todo"
+        type="text"
+        placeholder="What's your next task?">
+    </section>
+    <section id="todos-container">
+      <h2>Your tasks</h2>
+      <ul id="todos-list">
+        <!-- The todos will be inserted here-->
+      </ul>
+    </section>
+    <br>
+    <p align=center>A Javascript <i class="fab fa-js-square"></i> project for Javascript  Basics II campaign on StackUp | UpUpStackUp | 30DaysofWeb2</p>
+  </main>
+<!-- partial -->
+</body>
+<script src="./index.js"></script>
+</html>
